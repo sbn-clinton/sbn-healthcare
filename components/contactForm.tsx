@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,8 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Phone, Mail, MapPin, CheckCircle, AlertCircle } from "lucide-react";
-import { MinimalAnimatedBackground } from "@/components/animated-background";
+import { Mail, CheckCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
 import { sendContactEmail } from "@/app/actions/contact";
 
