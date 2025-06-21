@@ -22,7 +22,7 @@ import {
 import { Phone, Mail, MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import { MinimalAnimatedBackground } from "@/components/animated-background";
 import { useState } from "react";
-import { sendContactEmail } from "@/lib/actions/contact";
+import { sendContactEmail } from "@/app/actions/contact";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");

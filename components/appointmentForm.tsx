@@ -14,7 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Calendar, CheckCircle, AlertCircle } from "lucide-react";
-import { bookAppointment } from "@/lib/actions/appointment";
+import { bookAppointment } from "@/app/actions/appointment";
 
 const AppointmentForm = () => {
   const [isPending, startTransition] = useTransition();
