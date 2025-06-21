@@ -91,7 +91,7 @@ export async function bookAppointment(formData: FormData) {
 
     // Send email to company
     await transporter.sendMail({
-      from: process.env.GMAIL_USER,
+      from: `"${appointmentData.firstName} ${appointmentData.lastName}" <${process.env.SMTP_USER}>`,
       to: process.env.COMPANY_EMAIL || process.env.GMAIL_USER, // Company email to receive notifications
       subject: `New Appointment Booking - ${appointmentData.firstName} ${appointmentData.lastName}`,
       html: companyEmailHtml,

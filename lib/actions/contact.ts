@@ -40,9 +40,7 @@ export async function sendContactEmail(formData: ContactFormData): Promise<Email
   try {
     // Create transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST, // e.g., "smtp.gmail.com"
       service: "gmail",
-      port: parseInt(process.env.SMTP_PORT || "587"),
       secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
       auth: {
         user: process.env.COMPANY_EMAIL, // your email
